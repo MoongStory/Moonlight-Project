@@ -1,0 +1,27 @@
+.alt-header__column .material-symbols-outlined {
+  font-size: 40px;
+}
+
+.settings__setting {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings__setting__left-side {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-size: 24px;
+}
+
+.material-symbols-outlined-settings {
+  margin-right: 20px;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.settings__setting__right-side {
+  color: rgba(0, 0, 0, 0.4);
+}

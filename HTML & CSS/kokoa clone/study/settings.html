@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          wifi
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span>
+          <script>
+            var time = new Date();
+
+            var hours = ("0" + time.getHours()).slice(-2);
+            var minutes = ("0" + time.getMinutes()).slice(-2);
+
+            document.write(hours + ":" + minutes);
+          </script>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          lock_reset
+        </span>
+
+        <span>110%</span>
+
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          battery_horiz_075
+        </span>
+
+        <span
+          class="material-symbols-outlined status-bar__material-symbols-outlined"
+        >
+          bolt
+        </span>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <span class="material-symbols-outlined"> chevron_left </span>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <span class="material-symbols-outlined"> search </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting__left-side">
+            <span
+              class="material-symbols-outlined material-symbols-outlined-settings"
+            >
+              campaign
+            </span>
+            <span>Notices</span>
+          </div>
+          <div class="settings__setting__right-side">...</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting__left-side">
+            <span
+              class="material-symbols-outlined material-symbols-outlined-settings"
+            >
+              science
+            </span>
+            <span>Kokoa Lab</span>
+          </div>
+          <div class="settings__setting__right-side">...</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting__left-side">
+            <span
+              class="material-symbols-outlined material-symbols-outlined-settings"
+            >
+              info
+            </span>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting__right-side">Latest Version</div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="./friends.html"
+            ><span class="material-symbols-outlined"> person </span></a
+          >
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="./chats.html"
+            ><span class="nav__chat__notification badge">1</span>
+            <span class="material-symbols-outlined"> chat_bubble </span></a
+          >
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><span class="material-symbols-outlined"> search </span></a
+          >
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span class="nav__more_horiz__notification"></span
+            ><span class="material-symbols-outlined"> more_horiz </span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+  </body>
+</html>
