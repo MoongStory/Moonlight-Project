@@ -136,13 +136,13 @@ body > div:first-child {
 .buttons button:nth-child(2) {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 30px;
 }
 
 .buttons button:nth-child(3) {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 30px;
 }
 /* endregion buttons */
 
