@@ -1,0 +1,71 @@
+<!--
+힌트 엿보기
+
+1. 완벽히 따라할 필요는 없습니다.
+	똑같은 그림과 똑같은 font, 똑같은 색깔로 구현할 필요는 없습니다.
+	중요한 건 레이아웃, 구조입니다. 내용이 달라도 형태만 동일하면 됩니다.
+	참고로. 예시의 Font 는 nunito 입니다.
+2. 좌측 하단의 컨트롤 박스는 다른 요소들과 다르게 독립적입니다.
+	노래 리스트가 height를 초과해도, 컨트롤 박스의 위치에 영향을 주지 않습니다.
+	position을 적절히 활용하세요.
+3. 우측 노래 진행 bar
+	해당 파트는 이미 재생된 부분, 현재 재생 위치, 전체 재생 길이 혹은 남은 부분 이렇게 3개의 요소로 나눌 수 있습니다.
+	position을 적절히 활용하세요.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kokoa Challenge</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="music-main-page content__page">
+          <div class="header-buttons">
+            <span class="material-symbols-outlined"> arrow_back </span>
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+          <div class="music-information">
+            <div class="singer-image">
+              <img
+                src="http://img.tvreportcdn.de/images/20190521/20190521_1558400753_37109500_1.jpg"
+              />
+            </div>
+            <div>
+              <div>Tyler, The Creator</div>
+              <div>Rap, Hip-Hop</div>
+            </div>
+          </div>
+          <div>
+            <button>Shuffle</button>
+            <button>좋아요</button>
+          </div>
+          <div>노래 목록</div>
+          <div>컨트롤러</div>
+        </div>
+        <div class="music-detail-page content__page">
+          <div class="header-buttons">
+            <span class="material-symbols-outlined"> arrow_back </span>
+            <span class="material-symbols-outlined"> more_vert </span>
+          </div>
+          <div class="music-information"></div>
+          <div>노래 플레이 시간</div>
+          <div>컨트롤러</div>
+        </div>
+      </div>
+    </main>
+    <!-- ❌ DON'T DELETE THIS OR WORRY ABOUT THIS 👇🏻 ❌ -->
+    <script
+      src="https://kit.fontawesome.com/b5ac015c11.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

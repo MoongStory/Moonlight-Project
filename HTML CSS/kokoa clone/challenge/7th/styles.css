@@ -1,0 +1,54 @@
+/* DONT DELETE THIS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* WRITE YOUR CODE BELOW */
+
+:root {
+  --page-width: 35vw;
+  --page-height: 90vh;
+  --page-border-radius: 20px;
+}
+
+body {
+  background-color: #f3f3f5;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 65px 55px 65px;
+}
+
+.music-main-page {
+  background-color: lightpink;
+}
+
+.music-detail-page {
+  background-color: lightblue;
+}
+
+.content__page {
+  width: var(--page-width);
+  height: var(--page-height);
+  border-radius: var(--page-border-radius);
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px 15px 20px;
+}
+
+.music-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singer-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
