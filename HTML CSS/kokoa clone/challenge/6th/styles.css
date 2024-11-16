@@ -1,3 +1,85 @@
 /* DONT DELETE THIS */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 /* WRITE YOUR CODE BELOW */
+
+:root {
+  --header-margin: 20px;
+  --font-color-lightgray: lightgray;
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+}
+
+.header-bar {
+  background-color: #ffce33;
+  width: 100vw;
+  height: 100px;
+}
+
+.header-bar__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.header-bar__contents span {
+  font-size: 24px;
+}
+
+.header-bar span:first-child {
+  margin-left: var(--header-margin);
+}
+
+.header-bar span:nth-child(2) {
+  font-weight: 600;
+}
+
+.header-bar span:last-child {
+  margin-right: var(--header-margin);
+}
+
+.material-symbols-outlined-shopping_basket {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.search-box-area {
+  width: 90%;
+  height: 50px;
+  position: fixed;
+  top: 76px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.search-box {
+  border: none;
+  width: 95%;
+  height: 100%;
+}
+
+.search-box:focus-visible {
+  outline: none;
+}
+
+.search-box::placeholder {
+  color: var(--font-color-lightgray);
+  font-size: 16px;
+}
+
+.font-color-lightgray {
+  color: var(--font-color-lightgray);
+}
