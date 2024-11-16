@@ -3,12 +3,13 @@
 /* WRITE YOUR CODE BELOW */
 
 :root {
-  --header-margin: 20px;
-  --font-color-lightgray: lightgray;
+  --margin-header-side: 20px;
+  --height-header-bar: 100px;
+  --height-search-box-area: 50px;
+  --color-lightgray: lightgray;
 }
 
 body {
-  background-color: rgb(244, 244, 244);
   height: 100vh;
 }
 
@@ -16,13 +17,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
 }
 
 .header-bar {
   background-color: #ffce33;
   width: 100vw;
-  height: 100px;
+  height: var(--height-header-bar);
+  position: fixed;
 }
 
 .header-bar__contents {
@@ -37,7 +38,7 @@ header {
 }
 
 .header-bar span:first-child {
-  margin-left: var(--header-margin);
+  margin-left: var(--margin-header-side);
 }
 
 .header-bar span:nth-child(2) {
@@ -45,16 +46,12 @@ header {
 }
 
 .header-bar span:last-child {
-  margin-right: var(--header-margin);
-}
-
-.material-symbols-outlined-shopping_basket {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  margin-right: var(--margin-header-side);
 }
 
 .search-box-area {
   width: 90%;
-  height: 50px;
+  height: var(--height-search-box-area);
   position: fixed;
   top: 76px;
   border-radius: 30px;
@@ -63,6 +60,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px;
+  box-shadow: 0 3px 5px -2px gray;
 }
 
 .search-box {
@@ -76,10 +74,21 @@ header {
 }
 
 .search-box::placeholder {
-  color: var(--font-color-lightgray);
+  color: var(--color-lightgray);
   font-size: 16px;
 }
 
+.material-symbols-outlined-shopping_basket {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 .font-color-lightgray {
-  color: var(--font-color-lightgray);
+  color: var(--color-lightgray);
+}
+
+main {
+  margin-top: calc(
+    var(--height-header-bar) + (var(--height-search-box-area) / 2) + 30px
+  );
+  margin-left: 20px;
 }
