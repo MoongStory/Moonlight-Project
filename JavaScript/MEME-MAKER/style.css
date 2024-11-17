@@ -10,3 +10,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.palette {
+  display: flex;
+}
+
+.color-option {
+  width: 5rem;
+  height: 5rem;
+}
