@@ -1,4 +1,6 @@
 const modeBtn = document.querySelector(".mode-btn");
+const destroyBtn = document.querySelector(".destroy-btn");
+const eraserBtn = document.querySelector(".eraser-btn");
 const colorOptions = Array.from(
   document.getElementsByClassName("color-option")
 );
@@ -7,8 +9,12 @@ const color = document.querySelector(".color");
 
 const canvas = document.querySelector("canvas");
 const ctx /* context */ = canvas.getContext("2d");
-canvas.width = 400;
-canvas.height = 400;
+
+const CANVAS_WIDTH = 400;
+const CANVAS_HEIGHT = 400;
+
+canvas.width = CANVAS_WIDTH;
+canvas.height = CANVAS_HEIGHT;
 
 ctx.lineWidth = lineWidth.value;
 
@@ -65,8 +71,19 @@ function onModeClick(event) {
 
 function onCanvasClick(event) {
   if (isFilling === true) {
-    ctx.fillRect(0, 0, 400, 400);
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   }
+}
+
+function onDestroyClick(event) {
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+}
+
+function onEraserClick(event) {
+  ctx.strokeStyle = "white";
+  isFilling = false;
+  modeBtn.innerText = "Fill";
 }
 
 // region 마우스 이벤트
@@ -84,3 +101,5 @@ color.addEventListener("change", onColorChange);
 colorOptions.forEach((color) => color.addEventListener("click", onColorClick));
 
 modeBtn.addEventListener("click", onModeClick);
+destroyBtn.addEventListener("click", onDestroyClick);
+eraserBtn.addEventListener("click", onEraserClick);
